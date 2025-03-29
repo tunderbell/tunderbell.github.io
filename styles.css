@@ -67,7 +67,14 @@ h1 {
 
 /* Centering bottom row images */
 .centered-image {
-    grid-column: 2 / span 3; /* Makes the text span across all 3 columns */
+    display: flex;
+    justify-content: center;
+}
+
+.images-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 equal-width columns */
+    gap: 10px; /* Space between images */
 }
 
 /* Footer styling */
