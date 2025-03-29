@@ -17,8 +17,8 @@
             <div class="collage-item"><img src="images\forMum2.jpg" alt="Image 2"></div>
             <div class="collage-item"><img src="images\forMum3.jpg" alt="Image 3"></div>
 
-            <!-- Middle row with text in 1 column -->
-            <div class="collage-item text-center" style="grid-column: 1 / span 3;">
+            <!-- Middle row with text in 1 column that spans all 3 columns -->
+            <div class="collage-item text-center">
                 <div class="main-text">
                     <p>As it's this time of year again, I'd like to take the opportunity to say thank you</p>
                     <p>for all the love and support you have given me over the years.</p>
@@ -30,10 +30,15 @@
                 </div>
             </div>
 
-            <!-- Bottom row (centered images) -->
-            <div class="collage-item centered-images">
-                <img src="images/image4.jpg" alt="Image 4">
-                <img src="images/image5.jpg" alt="Image 5">
+            <!-- Bottom row (3 columns with centered images) -->
+            <div class="bottom-row">
+                <div class="collage-item"><img src="images/forMum4.jpg" alt="Image 4"></div>
+                <div class="collage-item"><img src="images/forMum5.jpg" alt="Image 5"></div>
+                <!-- If you have a third image, uncomment this line -->
+                <!-- <div class="collage-item"><img src="images/image6.jpg" alt="Image 6"></div> -->
+                
+                <!-- If you only have two images but want them centered in the grid, use this instead -->
+                <div class="collage-item"></div> <!-- Empty placeholder for third column -->
             </div>
         </div>
 
