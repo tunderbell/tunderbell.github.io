@@ -1,0 +1,43 @@
+/* Basic styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0e6f6; /* Light purple background */
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container for centering content */
+.container {
+    padding: 50px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Header styling */
+h1 {
+    color: #ff69b4; /* Pink color */
+    font-size: 50px;
+}
+
+/* Paragraph styling */
+p {
+    font-size: 20px;
+    color: #333;
+    margin-top: 20px;
+}
+
+/* Image styling */
+.image {
+    width: 300px;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+/* Footer styling */
+footer {
+    margin-top: 40px;
+    font-size: 16px;
+    color: #666;
+}
