@@ -1,11 +1,13 @@
 /* Basic styles */
 body {
-    font-family: 'Verdana', sans-serif;
+    font-family: 'Poppins', sans-serif;
     background-color: #da91cd; /* Pink background */
     text-align: center;
     margin: 0;
     padding: 0;
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
 
 /* Container for centering content */
 .container {
@@ -59,10 +61,11 @@ h1 {
 
 /* Main text styling */
 .main-text p {
-    font-size: 18px;
+    font-size: 20px; /* Slightly larger */
     color: #333;
-    font-family: 'Dancing Script', cursive;
-    margin: 5px 0;
+    margin: 8px 0;
+    font-weight: 400; /* Normal weight for readability */
+    line-height: 1.5;
 }
 
 /* Bottom row images - fully centered */
