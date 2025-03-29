@@ -17,12 +17,16 @@ const messages = {
     ],
     "message4": [
         "I hope one day to make you proud",
-        "And repay you for all the love you've given me.",
+        "Repay you for all the love you've given me.",
+        "I hope to be half the person you are.",
+        "Insha'Allah"
     ],
     "message5": [
-        "You're actions are an inspiration tk me",
+        "You're actions are an inspiration to me",
+        "Pursuing an education while raising a family is no easy task",
+        "But you did it with grace and love.",
         "No words can express how proud I am to be your son.",
-        "Thank you, Mum!"
+        
     ]
 };
 
