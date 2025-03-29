@@ -22,19 +22,14 @@ h1 {
 
 /* Collage container using CSS Grid */
 .collage-container {
-    display: grid; /* Enables grid layout */
+    display: grid;
     grid-template-columns: repeat(3, 1fr); /* 3 equal-width columns */
-    grid-template-rows: auto auto auto; /* 3 rows: first for 3 images, second for text, third for 2 images */
+    grid-template-rows: auto auto auto; /* 3 rows */
     gap: 10px; /* Space between grid items */
     margin-top: 30px;
 }
 
 /* Styling for individual collage images */
-.collage-item {
-    position: relative;
-}
-
-/* Add rounded corners and ensure images fill their container */
 .collage-item img {
     width: 100%;
     height: auto;
@@ -42,20 +37,15 @@ h1 {
     object-fit: cover;
 }
 
-/* Center text inside the middle grid item */
+/* Middle row text (centered) */
 .text-center {
+    grid-column: 1 / span 3; /* Span all 3 columns */
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgba(255, 255, 255, 0.7); /* Slight background for text readability */
+    background-color: rgba(255, 255, 255, 0.7); /* Light background */
     border-radius: 10px;
     padding: 20px;
-    height: 100%;
-}
-
-/* Ensure the text takes the entire center row */
-.text-center {
-    grid-column: 1 / span 3; /* Makes the text span across all 3 columns */
 }
 
 /* Main text styling */
@@ -65,16 +55,19 @@ h1 {
     margin: 5px 0;
 }
 
-/* Centering bottom row images */
-.centered-image {
+/* Bottom row images - fully centered */
+.centered-images {
+    grid-column: 1 / span 3; /* Span the full width */
     display: flex;
     justify-content: center;
+    gap: 20px; /* Adds space between images */
 }
 
-.images-2 {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 2 equal-width columns */
-    gap: 10px; /* Space between images */
+/* Resize the bottom images */
+.centered-images img {
+    width: 30%; /* Adjust width for proper centering */
+    height: auto;
+    border-radius: 10px;
 }
 
 /* Footer styling */
