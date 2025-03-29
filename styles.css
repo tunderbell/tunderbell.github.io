@@ -24,7 +24,7 @@ h1 {
 .collage-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* 3 equal-width columns */
-    grid-template-rows: auto auto auto; /* 3 explicit rows */
+    grid-template-rows: auto auto auto; /* 3 rows */
     gap: 10px; /* Space between grid items */
     margin-top: 30px;
 }
@@ -55,18 +55,17 @@ h1 {
     margin: 5px 0;
 }
 
-/* Bottom row images */
-.bottom-row {
-    grid-column: 1 / span 3; /* Span all 3 columns */
-    display: flex; /* Use flexbox instead of grid */
-    justify-content: center; /* Center the images horizontally */
-    gap: 20px; /* Space between images */
+/* Bottom row images - fully centered */
+.centered-images {
+    grid-column: 1 / span 3; /* Span the full width */
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Adds space between images */
 }
 
-/* Style for bottom row images */
-.bottom-row img {
-    width: 30%; /* Control the width of the images */
-    max-width: 200px; /* Prevent them from getting too large */
+/* Resize the bottom images */
+.centered-images img {
+    width: 30%; /* Adjust width for proper centering */
     height: auto;
     border-radius: 10px;
 }
