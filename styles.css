@@ -23,8 +23,8 @@ h1 {
 /* Collage container using CSS Grid */
 .collage-container {
     display: grid; /* Enables grid layout */
-    grid-template-columns: repeat(3, 1fr); /* Three equal-width columns */
-    grid-template-rows: auto auto; /* Two rows with automatic height based on content */
+    grid-template-columns: repeat(3, 1fr); /* Three columns for the first row, 1 for the second */
+    grid-template-rows: auto auto auto; /* Three rows: first for 3 images, second for text, third for 2 images */
     gap: 10px; /* Space between grid items */
     margin-top: 30px;
 }
@@ -44,6 +44,7 @@ h1 {
 
 /* Center text inside the middle grid item */
 .text-center {
+    grid-column: 1 / span 3; /* Make the text span across all 3 columns */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -63,5 +64,5 @@ h1 {
 footer {
     margin-top: 40px;
     font-size: 16px;
-    color: #626060;
+    color: #726f6f;
 }
