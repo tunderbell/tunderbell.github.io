@@ -1,97 +1,68 @@
-/* General Styles */
+/* Basic styles */
 body {
-    font-family: 'Poppins', sans-serif;
-    background: linear-gradient(to right, #ff9a9e, #fad0c4);
+    font-family: Arial, sans-serif;
+    background-color: #da91cd; /* pink background */
     text-align: center;
     margin: 0;
     padding: 0;
 }
 
-/* Container */
+/* Container for centering content */
 .container {
     padding: 50px;
-    max-width: 900px;
+    max-width: 800px;
     margin: 0 auto;
 }
 
-/* Header Styling */
+/* Header styling */
 h1 {
-    color: #ff69b4;
+    color: #ff69b4; /* Pink color */
     font-size: 50px;
-    font-family: 'Dancing Script', cursive;
 }
 
-/* Paragraph Styling */
-p {
-    font-size: 20px;
-    color: #333;
-    margin-top: 10px;
+/* Collage container using CSS Grid */
+.collage-container {
+    display: grid; /* Enables grid layout */
+    grid-template-columns: repeat(3, 1fr); /* Three columns for the first row, 1 for the second */
+    grid-template-rows: auto auto auto; /* Three rows: first for 3 images, second for text, third for 2 images */
+    gap: 10px; /* Space between grid items */
+    margin-top: 30px;
 }
 
-/* Image Collage */
-.collage {
+/* Styling for individual collage images */
+.collage-item {
+    position: relative;
+}
+
+/* Add rounded corners and ensure images fill their container */
+.collage-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+/* Center text inside the middle grid item */
+.text-center {
+    grid-column: 1 / span 3; /* Make the text span across all 3 columns */
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 15px;
-    margin-bottom: 30px;
-}
-
-.collage img {
-    width: 200px;
-    height: auto;
+    background-color: rgba(255, 255, 255, 0.7); /* Slight background for text readability */
     border-radius: 10px;
-    transition: transform 0.3s ease-in-out;
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
-}
-
-.collage img:hover {
-    transform: scale(1.05);
-}
-
-/* Text Section */
-.main-text {
-    font-size: 20px;
-    color: #333;
-    font-family: 'Dancing Script', cursive;
-    background: linear-gradient(45deg, #ff9a9e, #fad0c4);
     padding: 20px;
-    border-radius: 15px;
-    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.1);
-    max-width: 600px;
-    margin: 0 auto;
+    height: 100%;
 }
 
-/* Centering Bottom Row Images */
-.bottom-row {
-    justify-content: center;
+.main-text p {
+    font-size: 18px;
+    color: #333;
+    margin: 5px 0;
 }
 
-/* Footer Styling */
+/* Footer styling */
 footer {
     margin-top: 40px;
     font-size: 16px;
-    color: #666;
-}
-
-footer p {
-    font-size: 18px;
-    font-weight: bold;
-    transition: color 0.3s ease-in-out;
-}
-
-footer p:hover {
-    color: #ff69b4;
-}
-
-/* Heart Animation */
-.heart {
-    display: inline-block;
-    animation: heartbeat 1.5s infinite;
-}
-
-@keyframes heartbeat {
-    0% { transform: scale(1); }
-    50% { transform: scale(1.2); }
-    100% { transform: scale(1); }
+    color: #726f6f;
 }
