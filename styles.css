@@ -25,6 +25,7 @@ h1 {
 /* Collage container using CSS Grid */
 .collage-container {
     display: grid;
+    background-color: #ff69b4;
     grid-template-columns: repeat(3, 1fr); /* 3 equal-width columns */
     grid-template-rows: auto auto auto; /* 3 rows */
     gap: 10px; /* Space between grid items */
